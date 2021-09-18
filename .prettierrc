@@ -1,4 +1,9 @@
 {
-  "arrowParens": "avoid",
-  "semi": false
+    "arrowParens": "avoid",
+    "semi": true,
+    "jsxSingleQuote": false,
+    "singleQuote": true,
+    "tabWidth": 4,
+    "printWidth": 80,
+    "bracketSpacing": true
 }
