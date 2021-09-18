@@ -1,6 +1,7 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
+import { Navigation } from './Navigation';
 
 export const Header = ({ siteTitle }) => (
     <header className="flex flex-row items-center justify-between shadow-minimal bg-white px-5 lg:py-8 lg:px-16">
@@ -9,20 +10,7 @@ export const Header = ({ siteTitle }) => (
                 Włóczkowa Mama
             </Link>
         </h1>
-        <nav className="flex font-mono lg:text-xl lg:gap-x-8">
-            <Link to="/" className="text-primary text-xl">
-                Blog
-            </Link>
-            <Link to="/about" className="text-primary text-xl">
-                O mnie
-            </Link>
-            <Link to="/contact" className="text-primary text-xl">
-                Kontakt
-            </Link>
-            <Link to="/projects" className="text-primary text-xl">
-                Projekty
-            </Link>
-        </nav>
+        <Navigation />
     </header>
 );
 
