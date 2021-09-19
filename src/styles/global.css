@@ -12,22 +12,22 @@
         @apply font-bold;
     }
     h1 {
-        @apply text-4xl lg:text-6xl;
+        @apply text-4xl xl:text-6xl;
     }
     h2 {
-        @apply text-3xl lg:text-5xl;
+        @apply text-3xl xl:text-5xl;
     }
     h3 {
-        @apply text-2xl  lg:text-4xl;
+        @apply text-2xl  xl:text-4xl;
     }
     p {
-        @apply text-base lg:text-xl;
+        @apply text-base xl:text-xl;
     }
     a {
-        @apply font-medium font-mono text-sm transition duration-500 ease-in-out hover:text-highlighted lg:text-base;
+        @apply font-medium font-mono text-sm transition duration-500 ease-in-out hover:text-highlighted xl:text-base;
     }
     button {
-        @apply bg-highlighted text-myWhite font-mono lg:px-10 lg:py-5;
+        @apply bg-highlighted text-myWhite font-mono xl:px-10 xl:py-5;
     }
     b {
         @apply text-accent;

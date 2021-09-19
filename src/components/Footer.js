@@ -1,44 +1,40 @@
 import React from 'react';
 
 export const Footer = () => {
-    return (
-        <footer className="self-end flex flex-col justify-center items-center w-full bg-accent text-myWhite">
-            <p className="font-sans pt-36 text-2xl lg:text-3xl lg:pt-32">
-                Włóczkowa Mama
-            </p>
-            <p className="text-sm font-sans pt-8 text-center lg:pt-11 lg:text-base lg:w-4/12 lg:leading-loose">
-                Strona powstała z zamiłowania do sznurków, włóczek, szydełka
-                oraz makramy. Poświęcona jest moim projektom wykonywanym w 100%
-                ręcznie oraz inspiracjom, z których czerpałam przy tworzeniu
-                rękodzieła. Strona Włóczkowa Mama jest połączeniem pasji z
-                miłością do życia i ludzi.
-            </p>
-            <div className="flex justify-center items-center gap-x-4 pt-8 lg:pt-11 lg:gap-x-8">
-                <a
-                    className="underline text-myWhite"
-                    href="https://www.facebook.com/karolina.zurawska.1000"
-                >
-                    Facebook
-                </a>
-                <a
-                    className="underline text-myWhite"
-                    href="https://www.instagram.com/wloczkowa_mama/"
-                >
-                    Instagram
-                </a>
-            </div>
-            <div className="flex flex-col items-center justify-center font-sans pt-16 pb-8">
-                <p className="text-xs">&#169; 2021 Włóczkowa Mama</p>
-                <p className="text-xs">
-                    blog made by{' '}
-                    <a
-                        className="text-xs text-myWhite"
-                        href="https://github.com/lagdush"
-                    >
-                        Łukasz Żurawski
-                    </a>
-                </p>
-            </div>
-        </footer>
-    );
+  return (
+    <footer className="self-end flex flex-col justify-center items-center w-full bg-accent text-myWhite">
+      <p className="font-sans pt-36 text-2xl lg:text-3xl lg:pt-32">
+        Włóczkowa Mama
+      </p>
+      <p className="text-sm font-sans pt-8 text-center px-11 xl:px-96 xl:pt-11 xl:text-base xl:leading-loose">
+        Strona powstała z zamiłowania do sznurków, włóczek, szydełka oraz
+        makramy. Poświęcona jest moim projektom wykonywanym w 100% ręcznie oraz
+        inspiracjom, z których czerpałam przy tworzeniu rękodzieła. Strona
+        Włóczkowa Mama jest połączeniem pasji z miłością do życia i ludzi.
+      </p>
+      <div className="flex justify-center items-center gap-x-4 pt-8 xl:pt-11 xl:gap-x-8">
+        <a
+          className="underline text-myWhite"
+          href="https://www.facebook.com/karolina.zurawska.1000"
+        >
+          Facebook
+        </a>
+        <a
+          className="underline text-myWhite"
+          href="https://www.instagram.com/wloczkowa_mama/"
+        >
+          Instagram
+        </a>
+      </div>
+      <div className="flex flex-col items-center justify-center font-sans pt-16 pb-8">
+        <p className="text-xs">&#169; 2021 Włóczkowa Mama</p>
+        <p className="text-xs">
+          blog made by{' '}
+          <a className="text-xs text-myWhite" href="https://github.com/lagdush">
+            Łukasz Żurawski
+          </a>
+        </p>
+      </div>
+    </footer>
+  );
 };
