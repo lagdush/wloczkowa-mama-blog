@@ -30,8 +30,8 @@ module.exports = {
                 description: `Blog o z włóczką w tle. Znajdziesz tutaj moje bieżące oraz wcześniejsze prace. Poznasz mój sposób tworzenia oraz oraz moje inspiracje.`,
                 lang: 'pl',
                 start_url: `/`,
-                background_color: `#fdfeff`,
-                theme_color: `#F7906E`,
+                background_color: `#F8F9FA`,
+                theme_color: `#448AFF`,
                 display: `standalone`,
                 icon: './src/images/gatsby-icon.png',
             },
@@ -40,9 +40,7 @@ module.exports = {
         {
             resolve: `gatsby-plugin-nprogress`,
             options: {
-                // Setting a color is optional.
                 color: `tomato`,
-                // Disable the loading spinner.
                 showSpinner: false,
             },
         },

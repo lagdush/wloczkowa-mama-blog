@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 import { usePost } from '../hooks/usePost';
 
 export const MainArticle = () => {
-    const { slug, title, image, contentNode } = usePost();
+    const { slug, title, image, preview } = usePost();
     const imageSrc = getImage(image);
     return (
         <div
@@ -13,16 +13,14 @@ export const MainArticle = () => {
         >
             <Link
                 to={`/blog/${slug}`}
-                className="flex flex-col justify-center items-center"
+                className=" text-center flex flex-col justify-center items-center"
             >
-                <GatsbyImage image={imageSrc} alt={imageSrc.alt} />
+                <GatsbyImage image={imageSrc} alt={image.alt} />
                 <h1 className="lg:pt-11 lg:pb-20">{title}</h1>
                 <p
+                    className="text-base font-sans text-secondary lg:text-xl"
                     dangerouslySetInnerHTML={{
-                        __html: `${contentNode.childMarkdownRemark.html.slice(
-                            0,
-                            40
-                        )}...`,
+                        __html: `${preview}`,
                     }}
                 />
             </Link>

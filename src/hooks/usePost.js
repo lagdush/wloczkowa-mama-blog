@@ -4,21 +4,19 @@ export const usePost = () => {
     const post = useStaticQuery(
         graphql`
             query {
-                datoCmsPost {
-                    slug
+                datoCmsMainpost {
                     title
+                    slug
+                    preview
+                    date
                     image {
-                        alt
                         gatsbyImageData(placeholder: TRACED_SVG)
+                        alt
                     }
-                    contentNode {
-                        childMarkdownRemark {
-                            html
-                        }
-                    }
+                    content
                 }
             }
         `
     );
-    return post.datoCmsPost;
+    return post.datoCmsMainpost;
 };

@@ -6,7 +6,7 @@ export const Footer = () => {
             <p className="font-sans pt-36 text-2xl lg:text-3xl lg:pt-32">
                 Włóczkowa Mama
             </p>
-            <p className="text-sm font-sans pt-8 lg:pt-11 lg:text-base w-4/12 text-center">
+            <p className="text-sm font-sans pt-8 text-center lg:pt-11 lg:text-base lg:w-4/12 lg:leading-loose">
                 Strona powstała z zamiłowania do sznurków, włóczek, szydełka
                 oraz makramy. Poświęcona jest moim projektom wykonywanym w 100%
                 ręcznie oraz inspiracjom, z których czerpałam przy tworzeniu
@@ -16,7 +16,7 @@ export const Footer = () => {
             <div className="flex justify-center items-center gap-y-7 pt-8 lg:pt-11 lg:gap-x-8">
                 <a
                     className="underline text-myWhite"
-                    href='href="https://www.facebook.com/karolina.zurawska.1000"'
+                    href="https://www.facebook.com/karolina.zurawska.1000"
                 >
                     Facebook
                 </a>
