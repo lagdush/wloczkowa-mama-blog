@@ -3,6 +3,14 @@ module.exports = {
     darkMode: false, // or 'media' or 'class'
     theme: {
         extend: {
+            width: {
+                superLarge: '53.375rem',
+                extraLarge: '50.25rem',
+            },
+            height: {
+                mobile: "235px",
+                superLarge: '33.3125rem',
+            },
             boxShadow: {
                 minimal: '0px 1px 0px 0px rgba(0,0,0,0.16)',
             },

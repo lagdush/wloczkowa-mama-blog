@@ -11,7 +11,7 @@ const createNavigation = [
 export const Navigation = () => {
     return (
         <nav className="flex font-mono lg:text-xl lg:gap-x-8">
-            {createNavigation.map((nav, id) => (
+            {/* {createNavigation.map((nav, id) => (
                 <Link
                     to={nav.path}
                     className="text-primary text-xl"
@@ -19,7 +19,7 @@ export const Navigation = () => {
                 >
                     {nav.name}
                 </Link>
-            ))}
+            ))} */}
         </nav>
     );
 };

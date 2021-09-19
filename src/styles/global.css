@@ -4,7 +4,7 @@
 
 @layer base {
     html {
-        @apply font-sans text-primary bg-myWhite h-full w-full;
+        @apply font-sans text-primary bg-myWhite h-full w-full cursor-default;
     }
     h1,
     h2,

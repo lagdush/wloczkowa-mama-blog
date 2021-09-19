@@ -7,18 +7,19 @@ export const MainArticle = () => {
     const { slug, title, image, preview } = usePost();
     const imageSrc = getImage(image);
     return (
-        <div
-            style={{ width: '804px', minHeight: '858px' }}
-            className="lg:mb-16"
-        >
+        <div className="pb-8 text-4xl lg:pb-16 lg:w-extraLarge">
             <Link
                 to={`/blog/${slug}`}
-                className=" text-center flex flex-col justify-center items-center"
+                className="text-center flex flex-col justify-center items-center"
             >
-                <GatsbyImage image={imageSrc} alt={image.alt} />
-                <h1 className="lg:pt-11 lg:pb-20">{title}</h1>
+                <GatsbyImage
+                    className="w-screen h-mobile lg:w-superLarge lg:h-superLarge"
+                    image={imageSrc}
+                    alt={image.alt}
+                />
+                <h1 className="px-5 pt-8 pb-20 lg:pt-11 lg:pb-20">{title}</h1>
                 <p
-                    className="text-base font-sans text-secondary lg:text-xl"
+                    className="px-5 text-xl font-sans text-secondary lg:text-xl"
                     dangerouslySetInnerHTML={{
                         __html: `${preview}`,
                     }}

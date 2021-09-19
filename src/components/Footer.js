@@ -13,7 +13,7 @@ export const Footer = () => {
                 rękodzieła. Strona Włóczkowa Mama jest połączeniem pasji z
                 miłością do życia i ludzi.
             </p>
-            <div className="flex justify-center items-center gap-y-7 pt-8 lg:pt-11 lg:gap-x-8">
+            <div className="flex justify-center items-center gap-x-4 pt-8 lg:pt-11 lg:gap-x-8">
                 <a
                     className="underline text-myWhite"
                     href="https://www.facebook.com/karolina.zurawska.1000"
