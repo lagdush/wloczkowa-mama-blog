@@ -13,6 +13,7 @@ module.exports = {
     'gatsby-plugin-postcss',
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
+    `gatsby-plugin-catch-links`,
     {
       resolve: `gatsby-source-instagram-all`,
       options: {

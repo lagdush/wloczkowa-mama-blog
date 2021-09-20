@@ -7,11 +7,11 @@ export const Header = () => (
     <h1 className="font-normal">
       <Link
         to="/"
-        className="text-primary text-xl hover:text-primary xl:text-6xl"
+        className="text-primary text-xl hover:text-primary md:text-5xl xl:text-6xl"
       >
         Włóczkowa Mama
       </Link>
     </h1>
-    <Navigation />
+    {/* <Navigation /> */}
   </header>
 );
