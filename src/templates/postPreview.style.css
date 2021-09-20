@@ -1,0 +1,24 @@
+.post {
+  @apply text-justify;
+}
+
+.post > p {
+  @apply py-14 leading-loose;
+}
+
+.post > ul {
+  list-style: inside url('../../static/recList.svg');
+  @apply leading-loose text-xl;
+}
+
+.post > p > strong {
+  @apply text-highlighted;
+}
+
+.post > p > em {
+  @apply text-highlighted;
+}
+
+.post > img {
+  @apply xl:w-articleImg xl:h-articleImg;
+}

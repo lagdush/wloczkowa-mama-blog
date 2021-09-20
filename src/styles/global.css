@@ -3,38 +3,38 @@
 @tailwind base;
 
 @layer base {
-    html {
-        @apply font-sans text-primary bg-myWhite h-full w-full cursor-default;
-    }
-    h1,
-    h2,
-    h3 {
-        @apply font-bold;
-    }
-    h1 {
-        @apply text-4xl xl:text-6xl;
-    }
-    h2 {
-        @apply text-3xl xl:text-5xl;
-    }
-    h3 {
-        @apply text-2xl  xl:text-4xl;
-    }
-    p {
-        @apply text-base xl:text-xl;
-    }
-    a {
-        @apply font-medium font-mono text-sm transition duration-500 ease-in-out hover:text-highlighted xl:text-base;
-    }
-    button {
-        @apply bg-highlighted text-myWhite font-mono xl:px-10 xl:py-5;
-    }
-    b {
-        @apply text-accent;
-    }
-    i {
-        @apply text-light;
-    }
+  html {
+    @apply font-sans text-primary bg-myWhite h-full w-full cursor-default;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-bold;
+  }
+  h1 {
+    @apply text-4xl xl:text-6xl;
+  }
+  h2 {
+    @apply text-3xl xl:text-5xl;
+  }
+  h3 {
+    @apply text-2xl  xl:text-4xl;
+  }
+  p {
+    @apply text-base xl:text-xl;
+  }
+  a {
+    @apply font-medium font-mono text-sm transition duration-500 ease-in-out hover:text-highlighted xl:text-base;
+  }
+  button {
+    @apply bg-highlighted text-myWhite font-mono px-10 py-5;
+  }
+  b {
+    @apply text-accent;
+  }
+  i {
+    @apply text-light;
+  }
 }
 
 @tailwind components;
