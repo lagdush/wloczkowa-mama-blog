@@ -9,7 +9,7 @@ export const useInstagram = () => {
             node {
               localImage {
                 childImageSharp {
-                  gatsbyImageData(placeholder: TRACED_SVG, height: 256)
+                  gatsbyImageData(placeholder: TRACED_SVG, layout: CONSTRAINED)
                 }
               }
               permalink

@@ -8,7 +8,10 @@ export const usePosts = () => {
           edges {
             node {
               id
-              date
+              preview
+              meta {
+                createdAt
+              }
               slug
               title
               contentNode {
