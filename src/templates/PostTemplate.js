@@ -62,7 +62,16 @@ const PostTemplate = ({ data, pageContext }) => {
             dangerouslySetInnerHTML={{ __html: html }}
           />
           <p>Dzięki za czytanie 😍</p>
-          <button className="mt-16 xl:ml-8">Podziel się na facebooku</button>
+          <button className="mt-16 xl:ml-8">
+          {/* TODO:check it */}
+            <a
+              className="hover:text-black"
+              href="https://www.facebook.com/sharer/sharer.php?u=example.org"
+              target="_blank"
+            >
+              Podziel się na facebooku
+            </a>
+          </button>
         </article>
       </section>
       <section className="pt-24">

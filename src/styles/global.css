@@ -27,14 +27,12 @@
     @apply font-medium font-mono text-sm transition duration-500 ease-in-out hover:text-highlighted xl:text-base;
   }
   button {
-    @apply bg-highlighted text-myWhite font-mono px-10 py-5;
+    @apply bg-highlighted text-myWhite font-mono transition duration-500 ease-in-out px-10 py-5 hover:shadow-lg;
   }
-  b {
-    @apply text-accent;
+  strong, em {
+    @apply text-highlighted;
   }
-  i {
-    @apply text-light;
-  }
+
 }
 
 @tailwind components;

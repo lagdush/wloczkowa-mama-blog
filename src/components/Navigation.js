@@ -10,7 +10,7 @@ const createNavigation = [
 
 export const Navigation = () => {
   return (
-    <nav className="flex font-mono xl:text-xl xl:gap-x-8">
+    <nav className="flex font-mono md:gap-x-8 xl:text-xl ">
       {createNavigation.map((nav, id) => (
         <Link
           to={nav.path}
