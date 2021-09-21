@@ -5,7 +5,7 @@ import Seo from '../components/seo';
 import { Layout } from '../components/Layout';
 import { StaticImage } from 'gatsby-plugin-image';
 
-const SecondPage = () => (
+const About = () => (
   <Layout>
     <Seo />
     <section className="grid grid-flow-col auto-cols-min gap-x-28">
@@ -47,4 +47,4 @@ const SecondPage = () => (
   </Layout>
 );
 
-export default SecondPage;
+export default About;
