@@ -15,6 +15,7 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-preload-fonts`,
+    `gatsby-plugin-mdx`,
     {
       resolve: `gatsby-source-instagram-all`,
       options: {

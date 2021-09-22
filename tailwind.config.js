@@ -7,6 +7,7 @@ module.exports = {
         superLarge: '53.375rem',
         extraLarge: '50.25rem',
         articleImg: '854px',
+        aboutWidth: '357px',
       },
       height: {
         mobile: '235px',

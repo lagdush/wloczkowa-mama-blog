@@ -9,35 +9,26 @@ import { post } from './postPreview.style.css';
 
 export const query = graphql`
   query ($slug: String!) {
-    datoCmsPost(slug: { eq: $slug }) {
+    datoCmsMainpost(slug: { eq: $slug }) {
+      title
+      slug
+      preview
+      image {
+        gatsbyImageData(placeholder: TRACED_SVG)
+        alt
+      }
       contentNode {
         childMarkdownRemark {
           html
         }
       }
-      date
-      title
-      preview
-      meta {
-        createdAt
-      }
-      image {
-        gatsbyImageData(placeholder: TRACED_SVG)
-        alt
-      }
-      slug
     }
   }
 `;
 
-const PostTemplate = ({ data, pageContext }) => {
-  const { html } = data.datoCmsPost.contentNode.childMarkdownRemark;
-  const {
-    title,
-    preview,
-    image,
-    meta: { createdAt },
-  } = data.datoCmsPost;
+const MainPostTemplate = ({ data, pageContext }) => {
+  const { html } = data.datoCmsMainpost.contentNode.childMarkdownRemark;
+  const { title, preview, image } = data.datoCmsMainpost;
   const postImage = getImage(image);
   return (
     <Layout>
@@ -54,9 +45,7 @@ const PostTemplate = ({ data, pageContext }) => {
         <article className="px-5 xl:px-72">
           <div className="border-2 border-black my-6 xl:my-8" />
           <p className="font-bold">Karolina Żurawska</p>
-          <p className="font-serif text-base">
-            Opublikowano: {createdAt.slice(0, 10)}
-          </p>
+          <p className="font-serif text-base">Opublikowano: 22.09.2021</p>
           <div
             className="post xl:pt-14 xl:pb-16"
             dangerouslySetInnerHTML={{ __html: html }}
@@ -68,6 +57,7 @@ const PostTemplate = ({ data, pageContext }) => {
             className="inline-block px-10 py-5 mt-16 border-highlighted border-2 text-highlighted hover:bg-highlighted hover:text-myWhite xl:ml-8"
             href="https://www.facebook.com/sharer/sharer.php?u=example.org"
             target="_blank"
+            rel="noreferrer"
           >
             Podziel się na facebooku
           </a>
@@ -81,4 +71,4 @@ const PostTemplate = ({ data, pageContext }) => {
   );
 };
 
-export default PostTemplate;
+export default MainPostTemplate;

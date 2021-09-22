@@ -21,7 +21,7 @@ export const usePosts = () => {
               }
               image {
                 alt
-                gatsbyImageData(placeholder: TRACED_SVG, height: 176)
+                gatsbyImageData(placeholder: TRACED_SVG, layout: CONSTRAINED)
               }
             }
           }
