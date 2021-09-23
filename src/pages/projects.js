@@ -10,15 +10,9 @@ const Projects = () => {
     <Layout>
       <Seo />
       {products.map((product) => {
-        const { productName, productPhoto } = product.node;
-        const { html } =
-          product.node.productDescriptionNode.childMarkdownRemark;
+        const { productName, productPhoto, slug } = product.node;
         return (
-          <ProductCard
-            image={productPhoto}
-            title={productName}
-            description={html}
-          />
+          <ProductCard image={productPhoto} title={productName} slug={slug} />
         );
       })}
     </Layout>

@@ -16,11 +16,12 @@ export const useProducts = () => {
               productPhoto {
                 gatsbyImageData(
                   placeholder: TRACED_SVG
-                  layout: FIXED
-                  height: 300
+                  layout: CONSTRAINED
+                  aspectRatio: 1.5
                 )
                 alt
               }
+              slug
             }
           }
         }
