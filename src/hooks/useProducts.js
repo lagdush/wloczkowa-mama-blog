@@ -14,11 +14,7 @@ export const useProducts = () => {
               }
               productName
               productPhoto {
-                gatsbyImageData(
-                  placeholder: TRACED_SVG
-                  layout: CONSTRAINED
-                  aspectRatio: 1.5
-                )
+                gatsbyImageData(placeholder: TRACED_SVG)
                 alt
               }
               slug

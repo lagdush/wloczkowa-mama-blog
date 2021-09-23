@@ -1,6 +1,11 @@
 import React from 'react';
 
-export const Input = ({ placeholder, aria, type = 'text' }) => {
+export const Input = ({
+  placeholder,
+  aria,
+  type = 'text',
+  disabled = false,
+}) => {
   return (
     <div className="flex items-center border-b border-highlighted py-2">
       <input
@@ -8,6 +13,7 @@ export const Input = ({ placeholder, aria, type = 'text' }) => {
         type={type}
         placeholder={placeholder}
         aria-label={aria}
+        disabled={disabled}
       />
     </div>
   );

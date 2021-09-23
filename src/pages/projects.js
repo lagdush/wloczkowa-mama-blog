@@ -12,7 +12,12 @@ const Projects = () => {
       {products.map((product) => {
         const { productName, productPhoto, slug } = product.node;
         return (
-          <ProductCard image={productPhoto} title={productName} slug={slug} />
+          <ProductCard
+            key={productName + slug}
+            image={productPhoto}
+            title={productName}
+            slug={slug}
+          />
         );
       })}
     </Layout>

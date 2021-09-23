@@ -5,9 +5,9 @@ import { Layout } from '../components/Layout';
 import IconWithEyes from '../../static/assets/iconWithEyes.inline.svg';
 import { PostsPreview } from './PostsPreview';
 import { post } from './postPreview.style.css';
+
 export const Template = ({ html, title, preview, image, create }) => {
   const postImage = getImage(image);
-
   return (
     <Layout>
       <Seo title={title} />
@@ -19,9 +19,11 @@ export const Template = ({ html, title, preview, image, create }) => {
           image={postImage}
           alt={image.alt}
         />
-        <p className="pl-5 text-xs">
-          Autor zdjęcia: {image.title.toUpperCase()}
-        </p>
+        {image.title ? (
+          <p className="pl-5 text-xs">
+            Autor zdjęcia: {image.title.toUpperCase()}
+          </p>
+        ) : null}
 
         <article className="px-5 xl:px-72">
           <div className="border-2 border-black my-6 xl:my-8" />
@@ -37,7 +39,7 @@ export const Template = ({ html, title, preview, image, create }) => {
 
           <a
             className="inline-block px-10 py-5 mt-16 border-highlighted border-2 text-highlighted hover:bg-highlighted hover:text-myWhite xl:ml-8"
-            href="https://www.facebook.com/sharer/sharer.php?u=example.org"
+            href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`}
             target="_blank"
             rel="noreferrer"
           >
