@@ -6,7 +6,7 @@ const ThankYou = () => {
   return (
     <Layout>
       <h1 className="pb-12 text-secondary text-center text-4xl leading-relaxed md:text-7xl xl:text-8xl">
-        Dziękuje za Twoje zainteresowanie. Obiecujęm że niebawem do Ciebie
+        Dziękuje za Twoje zainteresowanie. Obiecuję że niebawem do Ciebie
         odpiszę.
       </h1>
 
