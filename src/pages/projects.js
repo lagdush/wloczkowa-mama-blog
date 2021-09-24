@@ -8,7 +8,7 @@ const Projects = () => {
   const products = useProducts();
   return (
     <Layout>
-      <Seo />
+      <Seo title="Włóczkowa Mama Projekty"/>
       {products.map((product) => {
         const { productName, productPhoto, slug } = product.node;
         return (

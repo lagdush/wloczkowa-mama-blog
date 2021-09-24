@@ -9,7 +9,7 @@ export const usePost = () => {
           slug
           preview
           image {
-            gatsbyImageData(placeholder: TRACED_SVG)
+            gatsbyImageData(placeholder: TRACED_SVG, layout: CONSTRAINED)
             alt
             sizes(maxWidth: 854, maxHeight: 533) {
               base64

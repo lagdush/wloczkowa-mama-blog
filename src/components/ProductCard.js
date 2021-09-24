@@ -11,13 +11,14 @@ export const ProductCard = ({ image, title, slug }) => {
           className="w-screen h-mobile sm:h-96 xl:w-superLarge xl:h-superLarge"
           image={imageSrc}
           alt={image.alt}
+          loading="eager"
         />
         <div className="flex flex-col justify-center items-center gap-y-5">
           <p className="pt-5 text-xl text-center xl:text-4xl font-bold">
             {title}
           </p>
 
-          <p className='underline'>Czytaj więcej</p>
+          <p className="underline">Czytaj więcej</p>
         </div>
       </article>
     </Link>

@@ -16,6 +16,8 @@ export const Template = ({ html, title, preview, image, create }) => {
         <p className="text-center w-screen pb-16 xl:pb-12">{preview}</p>
         <GatsbyImage
           className="xl:h-article xl:w-screen"
+          loading="eager"
+          objectPosition='center'
           image={postImage}
           alt={image.alt}
         />

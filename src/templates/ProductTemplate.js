@@ -42,6 +42,8 @@ const ProductTemplate = ({ data, pageContext }) => {
                 key={postImage + image.alt}
                 image={postImage}
                 alt={image.alt}
+                loading="eager"
+                objectFit="contain"
               />
             );
           })}

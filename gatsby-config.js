@@ -10,6 +10,7 @@ module.exports = {
     author: 'Łukasz Żurawski',
   },
   plugins: [
+    `gatsby-plugin-preact`,
     'gatsby-plugin-postcss',
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,

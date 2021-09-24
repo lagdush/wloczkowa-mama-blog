@@ -16,6 +16,7 @@ export const MainArticle = () => {
           className="w-screen h-mobile sm:h-96 xl:w-superLarge xl:h-superLarge"
           image={imageSrc}
           alt={image.alt}
+          loading="eager"
         />
         <h1 className="px-5 pt-8 pb-20 xl:pt-11 xl:pb-20">{title}</h1>
         <p

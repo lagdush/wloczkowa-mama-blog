@@ -6,6 +6,7 @@ export const InstagramPreview = ({ image = '', slug = '' }) => {
   return (
     <a href={slug} className="flex flex-col w-80 h-64 px-5 xl:px-0">
       <GatsbyImage
+        loading="eager"
         className="shadow-md"
         image={imageSrc}
         alt="Fotografia z Instagrama włóczkowa mama"

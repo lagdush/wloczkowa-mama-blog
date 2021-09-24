@@ -6,7 +6,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 const About = () => (
   <Layout>
-    <Seo />
+    <Seo title="Włóczkowa Mama - O mnie" />
     <section className="flex flex-col justify-center items-center gap-y-8 lg:grid lg:grid-flow-col lg:auto-cols-min lg:gap-x-28">
       <StaticImage
         className="lg:w-60 md:h-full xl:w-aboutWidth"
