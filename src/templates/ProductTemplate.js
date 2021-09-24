@@ -5,6 +5,8 @@ import { Layout } from '../components/Layout';
 import Seo from '../components/seo';
 import { Input } from '../components/Input';
 import { Textarea } from '../components/Textarea';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
 export const query = graphql`
   query ($slug: String!) {
@@ -34,19 +36,29 @@ const ProductTemplate = ({ data, pageContext }) => {
       <section>
         <h1 className="text-center pb-6 xl:pb-20">{productName}</h1>
 
-        <div className="flex justify-center flex-col items-center gap-10 pb-8 xl:grid xl:grid-cols-2">
-          {productGallery.map((image) => {
-            const postImage = getImage(image);
-            return (
-              <GatsbyImage
-                key={postImage + image.alt}
-                image={postImage}
-                alt={image.alt}
-                loading="eager"
-                objectFit="contain"
-              />
-            );
-          })}
+        <div className="flex justify-center flex-col items-center gap-y-10 pb-8">
+          <Carousel
+            autoPlay
+            interval={5000}
+            infiniteLoop
+            showStatus={false}
+            transitionTime={500}
+            useKeyboardArrows
+            autoFocus
+          >
+            {productGallery.map((image) => {
+              const postImage = getImage(image);
+              return (
+                <GatsbyImage
+                  key={postImage + image.alt}
+                  image={postImage}
+                  alt={image.alt}
+                  loading="eager"
+                  objectFit="contain"
+                />
+              );
+            })}
+          </Carousel>
         </div>
         <article className="px-5 xl:px-72">
           <div
