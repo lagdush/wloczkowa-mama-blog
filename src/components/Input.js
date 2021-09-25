@@ -1,15 +1,20 @@
 import React from 'react';
+import { Label } from './Label';
 
 export const Input = ({
   placeholder,
+  label,
   aria,
+  id,
   type = 'text',
   disabled = false,
 }) => {
   return (
-    <div className="flex items-center border-b border-highlighted py-2">
+    <div className="flex items-start justify-center flex-col border-b border-highlighted py-2">
+      <Label id={id}>{label}</Label>
       <input
-        className="appearance-none bg-transparent border-none w-full text-primary mr-3 py-1 px-2 leading-tight focus:outline-none"
+        id={id}
+        className="appearance-none bg-transparent border-none w-full text-primary mr-3 py-1 leading-tight focus:outline-none"
         type={type}
         placeholder={placeholder}
         aria-label={aria}

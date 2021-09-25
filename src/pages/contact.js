@@ -6,7 +6,7 @@ import { Textarea } from '../components/Textarea';
 const Contact = () => {
   return (
     <Layout>
-      <section className="flex flex-col gap-y-8 justify-center items-center bg-gray-100 p-20">
+      <section className="flex flex-col gap-y-8 justify-center items-center bg-gray-100 w-full xl:p-20">
         <h2>Napisz do mnie</h2>
         <form
           method="post"
@@ -17,9 +17,19 @@ const Contact = () => {
         >
           <input type="hidden" name="bot-field" />
           <input type="hidden" name="form-name" value="contact" />
-          <Input placeholder="Twoje imię" aria="Imię" />
-          <Input placeholder="Twój email" aria="Email" />
-          <Textarea />
+          <Input
+            id="userName"
+            label="Imię"
+            placeholder="Twoje imię"
+            aria="Imię"
+          />
+          <Input
+            id="userEmail"
+            label="Email"
+            placeholder="Twój email"
+            aria="Email"
+          />
+          <Textarea label="Wiadomość" id="userMessage" />
           <button className="mt-16">Wyślij</button>
         </form>
       </section>
