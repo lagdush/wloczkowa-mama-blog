@@ -1,7 +1,7 @@
 import React from 'react';
 import Headroom from 'react-headroom';
-import { Footer } from './Footer';
-import { Header } from './Header';
+import { Footer } from '../Footer';
+import { Header } from '../Header';
 
 export const Layout = ({ children }) => {
   return (

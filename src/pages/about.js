@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import Seo from '../components/HelmetSeo';
-import { Layout } from '../components/Layout';
+import { Layout } from '../components/Layout/Layout';
 import { StaticImage } from 'gatsby-plugin-image';
 
 const About = () => (

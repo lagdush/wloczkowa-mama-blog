@@ -1,7 +1,7 @@
 import React from 'react';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import Seo from '../components/HelmetSeo';
-import { Layout } from '../components/Layout';
+import { Layout } from '../components/Layout/Layout';
 import IconWithEyes from '../../static/assets/iconWithEyes.inline.svg';
 import { PostsPreview } from './PostsPreview';
 import { post } from './postPreview.style.css';
