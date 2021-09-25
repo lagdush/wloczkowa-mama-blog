@@ -1,7 +1,7 @@
 module.exports = {
   important: true,
   purge: ['./src/**/*.{js,jsx,ts,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: false, 
   theme: {
     extend: {
       keyframes: {
@@ -18,6 +18,7 @@ module.exports = {
         extraLarge: '50.25rem',
         articleImg: '854px',
         aboutWidth: '357px',
+        mobile: '235px',
       },
       height: {
         mobile: '235px',

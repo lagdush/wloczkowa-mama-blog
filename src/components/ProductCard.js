@@ -6,9 +6,9 @@ export const ProductCard = ({ image, title, slug }) => {
   const imageSrc = getImage(image);
   return (
     <Link to={`/projects/${slug}`}>
-      <article className="flex flex-col w-full justify-between items-center p-8 mb-8 xl:shadow-xl">
+      <article className="flex flex-col w-full justify-between items-center mb-8 sm:shadow-md sm:p-5 xl:p-8 xl:shadow-xl">
         <GatsbyImage
-          className="w-screen h-mobile sm:h-96 xl:w-superLarge xl:h-superLarge"
+          className="w-screen h-mobile sm:w-80 sm:h-96 md:w-aboutWidth lg:w-superLarge lg:h-superLarge"
           image={imageSrc}
           alt={image.alt}
           loading="eager"

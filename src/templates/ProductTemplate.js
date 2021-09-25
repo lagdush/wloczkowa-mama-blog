@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { Layout } from '../components/Layout/Layout';
 import Seo from '../components/HelmetSeo';
@@ -60,7 +60,7 @@ const ProductTemplate = ({ data }) => {
             })}
           </Carousel>
         </div>
-        <article className="px-5 xl:px-72">
+        <article className="px-5">
           <div
             className="post xl:pt-14 xl:pb-16"
             dangerouslySetInnerHTML={{ __html: html }}
@@ -93,6 +93,13 @@ const ProductTemplate = ({ data }) => {
             </form>
           </section>
         </article>
+        <Link
+          to="/projects"
+          className="block mt-20 bg-transparent border-2 border-light text-primary font-mono transition duration-500 ease-in-out px-10 py-5 text-center
+          bg-light hover:bg-highlighted hover:text-myWhite"
+        >
+          Zobacz też moje inne projekty
+        </Link>
       </section>
     </Layout>
   );
