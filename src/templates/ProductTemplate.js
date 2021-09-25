@@ -44,7 +44,7 @@ const ProductTemplate = ({ data, pageContext }) => {
             showStatus={false}
             transitionTime={500}
             useKeyboardArrows
-            autoFocus
+            showThumbs={false}
           >
             {productGallery.map((image) => {
               const postImage = getImage(image);

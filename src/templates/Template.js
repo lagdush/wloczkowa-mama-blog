@@ -38,15 +38,25 @@ export const Template = ({ html, title, preview, image, create, slug }) => {
             dangerouslySetInnerHTML={{ __html: html }}
           />
           <p>Dzięki za czytanie 😍</p>
-
-          <a
-            className="inline-block px-10 py-5 mt-16 border-highlighted border-2 text-highlighted hover:bg-highlighted hover:text-myWhite xl:ml-8"
-            // href={`https://www.facebook.com/sharer/sharer.php?u=https://www.wloczkowa-mama/${slug}`}
-            target="_blank"
-            rel="noreferrer"
-          >
-            Podziel się na facebooku
-          </a>
+          {slug ? (
+            <a
+              className="inline-block px-10 py-5 mt-16 border-highlighted border-2 text-highlighted hover:bg-highlighted hover:text-myWhite xl:ml-8"
+              href={`https://www.facebook.com/sharer/sharer.php?u=${process.env.GATSBY_SITE_URL}${slug}`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Podziel się na facebooku
+            </a>
+          ) : (
+            <a
+              className="inline-block px-10 py-5 mt-16 border-highlighted border-2 text-highlighted hover:bg-highlighted hover:text-myWhite xl:ml-8"
+              href={`https://www.facebook.com/sharer/sharer.php?u=${process.env.GATSBY_SITE_URL}`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Podziel się na facebooku
+            </a>
+          )}
         </article>
       </section>
       <section className="pt-24">

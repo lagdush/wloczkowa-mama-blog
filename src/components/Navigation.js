@@ -37,6 +37,7 @@ const HamburgerIco = ({ openMenu, isOpen }) => {
     <button
       className="flex flex-col h-10 w-10 border-2 bg-transparent border-none justify-center items-center group p-0"
       onClick={openMenuHandler}
+      aria-label="Hamburger Menu"
     >
       <div
         className={`${hamburgerLine} ${
