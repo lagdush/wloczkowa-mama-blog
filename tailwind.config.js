@@ -4,6 +4,15 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      keyframes: {
+        showMenu: {
+          from: { opacity: '0%' },
+          to: { opacity: '100%' },
+        },
+      },
+      animation: {
+        showMenu: 'showMenu 500ms ease-in-out',
+      },
       width: {
         superLarge: '53.375rem',
         extraLarge: '50.25rem',

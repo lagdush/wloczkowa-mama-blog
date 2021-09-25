@@ -6,7 +6,7 @@ import IconWithEyes from '../../static/assets/iconWithEyes.inline.svg';
 import { PostsPreview } from './PostsPreview';
 import { post } from './postPreview.style.css';
 
-export const Template = ({ html, title, preview, image, create }) => {
+export const Template = ({ html, title, preview, image, create, slug }) => {
   const postImage = getImage(image);
   return (
     <Layout>
@@ -17,7 +17,7 @@ export const Template = ({ html, title, preview, image, create }) => {
         <GatsbyImage
           className="xl:h-article xl:w-screen"
           loading="eager"
-          objectPosition='center'
+          objectPosition="center"
           image={postImage}
           alt={image.alt}
         />
@@ -41,7 +41,7 @@ export const Template = ({ html, title, preview, image, create }) => {
 
           <a
             className="inline-block px-10 py-5 mt-16 border-highlighted border-2 text-highlighted hover:bg-highlighted hover:text-myWhite xl:ml-8"
-            // href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`}
+            // href={`https://www.facebook.com/sharer/sharer.php?u=https://www.wloczkowa-mama/${slug}`}
             target="_blank"
             rel="noreferrer"
           >

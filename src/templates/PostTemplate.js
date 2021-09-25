@@ -27,6 +27,7 @@ export const query = graphql`
 `;
 
 const PostTemplate = ({ data, pageContext }) => {
+  const { slug } = pageContext;
   const { html } = data.datoCmsPost.contentNode.childMarkdownRemark;
   const {
     title,
@@ -42,6 +43,7 @@ const PostTemplate = ({ data, pageContext }) => {
       image={image}
       preview={preview}
       create={createdAt}
+      slug={slug}
     />
   );
 };
