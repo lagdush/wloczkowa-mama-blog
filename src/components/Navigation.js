@@ -11,7 +11,7 @@ const createNavigation = [
 export const Navigation = ({ handler }) => {
   return (
     <nav
-      className="flex flex-col font-mono text-center justify-around h-4/6 animate-showMenu md:gap-x-8 lg:flex-row xl:text-xl "
+      className="flex flex-col font-mono text-center justify-around h-4/6 animate-showMenu md:gap-x-8 lg:flex-row xl:text-xl xl:animate-none"
       onClick={handler}
     >
       {createNavigation.map((nav, id) => (

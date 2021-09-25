@@ -74,7 +74,7 @@ const ProductTemplate = ({ data }) => {
               netlify-honeypot="bot-field"
               data-netlify="true"
               name="contact"
-              action="/thank-you"
+              action="/thank-you/"
               className="flex flex-col gap-y-12 pt-12 w-full max-w-sm"
             >
               <input type="hidden" name="bot-field" />
