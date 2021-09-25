@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'gatsby';
 
 const createNavigation = [
@@ -28,11 +28,9 @@ export const Navigation = ({ handler }) => {
   );
 };
 
-const HamburgerIco = ({ openMenu }) => {
-  const [isOpen, setIsOpen] = useState(false);
+const HamburgerIco = ({ openMenu, isOpen }) => {
   const hamburgerLine = `h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300`;
   const openMenuHandler = () => {
-    setIsOpen(!isOpen);
     openMenu();
   };
   return (
@@ -69,18 +67,26 @@ export const HamburgerMenu = () => {
   const openCloseMenu = () => {
     showMenu(!menu);
   };
+
+  useEffect(() => {
+    menu
+      ? (document.body.style.overflow = 'hidden')
+      : (document.body.style.overflow = 'auto');
+  });
   return (
     <div className="w-screen">
       <div className="flex items-center justify-between">
         <Link
           to="/"
-          onCLick={openCloseMenu}
+          onCLick={() => {
+            showMenu(false);
+          }}
           className="text-2xl hover:text-primary"
         >
           Włóczkowa mama
         </Link>
 
-        <HamburgerIco openMenu={openCloseMenu} />
+        <HamburgerIco isOpen={menu} openMenu={openCloseMenu} />
       </div>
 
       {menu && (
