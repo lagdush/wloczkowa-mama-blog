@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { Layout } from '../components/Layout';
-import Seo from '../components/seo';
+import Seo from '../components/HelmetSeo';
 import { Input } from '../components/Input';
 import { Textarea } from '../components/Textarea';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
@@ -26,7 +26,7 @@ export const query = graphql`
   }
 `;
 
-const ProductTemplate = ({ data, pageContext }) => {
+const ProductTemplate = ({ data }) => {
   const { html } =
     data.datoCmsProject.productDescriptionNode.childMarkdownRemark;
   const { productName, productGallery } = data.datoCmsProject;

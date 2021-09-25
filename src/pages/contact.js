@@ -2,10 +2,12 @@ import React from 'react';
 import { Layout } from '../components/Layout';
 import { Input } from '../components/Input';
 import { Textarea } from '../components/Textarea';
+import Seo from '../components/HelmetSeo';
 
 const Contact = () => {
   return (
     <Layout>
+      <Seo />
       <section className="flex flex-col gap-y-8 justify-center items-center bg-gray-100 w-full xl:p-20">
         <h2>Napisz do mnie</h2>
         <form

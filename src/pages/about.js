@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import Seo from '../components/seo';
+import Seo from '../components/HelmetSeo';
 import { Layout } from '../components/Layout';
 import { StaticImage } from 'gatsby-plugin-image';
 

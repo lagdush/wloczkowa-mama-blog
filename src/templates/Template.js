@@ -1,6 +1,6 @@
 import React from 'react';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import Seo from '../components/seo';
+import Seo from '../components/HelmetSeo';
 import { Layout } from '../components/Layout';
 import IconWithEyes from '../../static/assets/iconWithEyes.inline.svg';
 import { PostsPreview } from './PostsPreview';

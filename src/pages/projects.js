@@ -1,25 +1,13 @@
 import React from 'react';
 import { Layout } from '../components/Layout';
-import { ProductCard } from '../components/ProductCard';
-import Seo from '../components/seo';
-import { useProducts } from '../hooks/useProducts';
+import Seo from '../components/HelmetSeo';
+import { ProductList } from '../components/ProductList';
 
 const Projects = () => {
-  const products = useProducts();
   return (
     <Layout>
-      <Seo title="Włóczkowa Mama Projekty"/>
-      {products.map((product) => {
-        const { productName, productPhoto, slug } = product.node;
-        return (
-          <ProductCard
-            key={productName + slug}
-            image={productPhoto}
-            title={productName}
-            slug={slug}
-          />
-        );
-      })}
+      <Seo title="Włóczkowa Mama Projekty" />
+      <ProductList />
     </Layout>
   );
 };
