@@ -5,7 +5,7 @@ import { Layout } from '../components/Layout/Layout';
 import Seo from '../components/HelmetSeo';
 import { Input } from '../components/Input';
 import { Textarea } from '../components/Textarea';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; 
 import { Carousel } from 'react-responsive-carousel';
 
 export const query = graphql`

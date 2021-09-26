@@ -5,7 +5,7 @@ module.exports = {
     title: 'Włóczkowa Mama',
     description:
       'Strona powstała z zamiłowania do sznurków, włóczek, szydełka oraz makramy. Poświęcona jest moim projektom wykonywanym w 100% ręcznie oraz inspiracjom, z których czerpałam przy tworzeniu rękodzieła. Strona Włóczkowa Mama jest połączeniem pasji z miłością do życia i ludzi.',
-    image: './static/image/logo.png',
+    image: './static/mainImage.jpg',
     siteUrl: process.env.GATSBY_SITE_URL,
     author: 'Łukasz Żurawski',
   },

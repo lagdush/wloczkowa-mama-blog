@@ -14,6 +14,8 @@ export const useInstagram = () => {
                     layout: CONSTRAINED
                     transformOptions: { fit: CONTAIN, cropFocus: CENTER }
                     quality: 70
+                    width: 256
+                    height: 320
                   )
                 }
               }

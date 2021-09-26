@@ -15,12 +15,12 @@ const About = () => (
       />
       <article className="flex flex-col justify-center items-center gap-y-32 xl:gap-y-44">
         <p className="text-secondary text-4xl leading-relaxed md:text-7xl xl:text-8xl">
-          Cześć, jestem <span className="font-serif text-primary">Karo</span>{' '}
-          <br /> Mama,<span className="font-serif text-primary"> Artystka</span>
-          , Żona, Spaceroholiczka, Nauczycielka muzyki,{' '}
-          <span className="font-serif text-primary">Blogerka</span>, Miłośnica
-          kotów zakochana w zachodach słońca,{' '}
-          <span className="font-serif text-primary">Szydełkomaniaczka</span>
+          Cześć, tu <span className="font-serif text-primary">Karo.</span> Jestem
+          <br /> mamą,<span className="font-serif text-primary"> artystką</span>
+          , żoną, spaceroholiczką, nauczycielką muzyki,{' '}
+          <span className="font-serif text-primary">blogerką</span>, miłośnicą
+          kotów zakochaną w zachodach słońca. Jestem
+          <span className="font-serif text-primary"> szydełkomaniaczką</span>
         </p>
         <p className="font-serif text-justify px-10 leading-loose xl:pr-96 lg:leading-10">
           Jestem szczęśliwą żoną Łukasza i mamą Mikołajka. Od dzieciństwa moją
