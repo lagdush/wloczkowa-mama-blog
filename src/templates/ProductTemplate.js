@@ -5,7 +5,7 @@ import { Layout } from '../components/Layout/Layout';
 import Seo from '../components/HelmetSeo';
 import { Input } from '../components/Input';
 import { Textarea } from '../components/Textarea';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; 
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 
 export const query = graphql`
@@ -67,13 +67,13 @@ const ProductTemplate = ({ data }) => {
           />
           <section className="flex justify-center flex-col items-center">
             <p className="text-2xl font-medium">
-              Zainteresował się ten produkt? Napisz do mnie
+              Zainteresował Cię ten produkt? Napisz do mnie
             </p>
             <form
               method="post"
               netlify-honeypot="bot-field"
               data-netlify="true"
-              name="contact"
+              name={productName}
               action="/thankyou/"
               className="flex flex-col gap-y-12 pt-12 w-full max-w-sm"
             >

@@ -24,7 +24,7 @@ const About = () => (
         </p>
         <p className="font-serif text-justify px-10 leading-loose xl:pr-96 lg:leading-10">
           Jestem szczęśliwą żoną Łukasza i mamą Mikołajka. Od dzieciństwa moją
-          pasją, była muzyka. Choroba krtani na pół roku uniemożliwiła mi
+          pasją była muzyka. Choroba krtani na pół roku uniemożliwiła mi
           realizację mojej pasji. Zaczęłam się zastanawiać, gdzie ulokować moją
           energię. I nagle zrodził się pomysł:{' '}
           <em className="text-primary font-normal">
