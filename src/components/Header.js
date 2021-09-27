@@ -3,10 +3,14 @@ import useMatchMedia from 'react-use-match-media';
 import { Link } from 'gatsby';
 import { Navigation, HamburgerMenu } from './Navigation';
 
-export const Header = () => {
+export const Header = ({ shadow }) => {
   const isSmaller = useMatchMedia('(max-width: 812px)');
   return (
-    <header className="flex flex-row items-center justify-between shadow-minimal bg-white px-5 pb-5 pt-6 xl:py-8 xl:px-16">
+    <header
+      className={`flex flex-row items-center justify-between ${
+        shadow && 'shadow-lg'
+      } bg-white px-5 pb-5 pt-6 xl:py-8 xl:px-16`}
+    >
       {isSmaller ? <HamburgerMenu /> : <DesktopNav />}
     </header>
   );
