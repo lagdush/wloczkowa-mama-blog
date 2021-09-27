@@ -78,7 +78,7 @@ const ProductTemplate = ({ data }) => {
               className="flex flex-col gap-y-12 pt-12 w-full max-w-sm"
             >
               <input type="hidden" name="bot-field" />
-              <input type="hidden" name="form-name" value="contact" />
+              <input type="hidden" name="form-name" value={productName} />
               <Input placeholder="Twoje imię" aria="Imię" />
               <Input placeholder="Twój email" aria="Email" />
               <Input

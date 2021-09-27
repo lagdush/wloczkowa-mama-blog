@@ -15,6 +15,7 @@ export const Input = ({
       <input
         id={id}
         className="appearance-none bg-transparent border-none w-full text-primary mr-3 py-1 leading-tight focus:outline-none"
+        name={id}
         type={type}
         placeholder={placeholder}
         aria-label={aria}

@@ -14,12 +14,12 @@ const Contact = () => {
           method="post"
           netlify-honeypot="bot-field"
           data-netlify="true"
-          name="contact"
+          name="contact-form"
           action="/thankyou/"
           className="flex flex-col gap-y-12 pt-12 w-full max-w-sm"
         >
           <input type="hidden" name="bot-field" />
-          <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="form-name" value="contact-form" />
           <Input
             id="userName"
             label="Imię"
