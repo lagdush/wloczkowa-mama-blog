@@ -2,7 +2,7 @@ import React from 'react';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import Seo from '../components/HelmetSeo';
 import { Layout } from '../components/Layout/Layout';
-import IconWithEyes from '../../static/assets/iconWithEyes.inline.svg';
+
 import { PostsPreview } from './PostsPreview';
 import { post } from './postPreview.style.css';
 import { useLocation } from '@reach/router';
@@ -45,8 +45,7 @@ export const Template = ({ html, title, preview, image, create, slug }) => {
         </article>
       </section>
       <section className="pt-24">
-        <IconWithEyes className="w-full" />
-        <PostsPreview />
+        <PostsPreview postSlug={slug} />
       </section>
     </Layout>
   );

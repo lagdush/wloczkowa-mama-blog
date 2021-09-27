@@ -7,7 +7,7 @@ export const InstagramList = () => {
   return (
     <section className="flex flex-col justify-center items-center">
       <h2 className="pt-14 pb-7 text-center xl:pb-10 xl:pt-16">Zajrzyj na mój Instagram</h2>
-      <div className="grid gap-y-11 md:grid-cols-2 xl:gap-x-8 xl:gap-y-16">
+      <div className="grid gap-y-11 md:grid-cols-2 xl:grid-cols-3 xl:gap-x-10 xl:gap-y-16">
         {instagram.map((image) => {
           const { permalink, localImage } = image.node;
           return (
@@ -22,6 +22,3 @@ export const InstagramList = () => {
     </section>
   );
 };
-//  return (
-//      <InstagramPreview key={media_url} image={localImage.childImageSharp} slug={media_url} />
-//  );
